@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="bg-blob blob-1"></div>
+<div class="bg-blob blob-2"></div>
+
+<div class="app">
+  <aside class="sidebar">
+    <h2>BrokeBuddy</h2>
+    <a class="active" href="index.html">Dashboard</a>
+    <a href="expense.html">Expenses</a>
+    <a href="bills.html">Shared Bills</a>
+    <a href="reminders.html">Reminders</a>
+  </aside>
+
+  <main class="main">
+    <h1>Dashboard</h1>
+
+    <div class="cards">
+      <div class="stat-card">
+        <p>Total Budget</p>
+        <h2>₹8,000</h2>
+      </div>
+      <div class="stat-card">
+        <p>Spent</p>
+        <h2>₹5,700</h2>
+      </div>
+      <div class="stat-card">
+        <p>Remaining</p>
+        <h2>₹2,300</h2>
+      </div>
+    </div>
+
+    <section class="panel">
+      <h3>Budget Usage</h3>
+      <div class="progress"><div class="progress-bar" style="width:71%"></div></div>
+      <p>71% of budget used</p>
+    </section>
+
+    <section class="panel">
+      <h3>Category Breakdown</h3>
+      <canvas id="categoryChart" width="400" height="200"></canvas>
+    </section>
+
+    <section class="panel">
+      <h3>Recent Bills</h3>
+      <ul class="expense-list">
+        <li>💡 Electricity <span>₹1,200</span></li>
+        <li>📶 Wi-Fi <span>₹600</span></li>
+        <li>🍽️ Mess Charges <span>₹2,000</span></li>
+        <li>🚌 Auto Fare <span>₹880</span></li>
+      </ul>
+    </section>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

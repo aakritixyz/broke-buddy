@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expenses</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="bg-blob blob-1"></div>
+<div class="bg-blob blob-2"></div>
+
+<div class="app">
+  <aside class="sidebar">
+    <h2>🏠 Hostel</h2>
+    <a href="index.html">Dashboard</a>
+    <a class="active" href="expenses.html">Expenses</a>
+    <a href="bills.html">Shared Bills</a>
+    <a href="reminders.html">Reminders</a>
+  </aside>
+
+  <main class="main">
+    <h1>Expenses</h1>
+
+    <div class="panel">
+      <h3>Add New Expense</h3>
+      <input placeholder="Expense name">
+      <input type="number" placeholder="Amount ₹">
+      <select>
+        <option>Food</option>
+        <option>Utilities</option>
+        <option>Travel</option>
+        <option>Personal</option>
+      </select>
+      <button onclick="addExpense()">Add Expense</button>
+    </div>
+
+    <div class="panel">
+      <h3>Recent Expenses</h3>
+      <ul class="expense-list" id="expensesList"></ul>
+    </div>
+
+    <div class="panel">
+      <h3>Category Totals</h3>
+      <ul class="expense-list" id="categoryTotals"></ul>
+    </div>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

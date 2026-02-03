@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reminders</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="bg-blob blob-1"></div>
+<div class="bg-blob blob-2"></div>
+
+<div class="app">
+  <aside class="sidebar">
+    <h2>🏠 Hostel</h2>
+    <a href="index.html">Dashboard</a>
+    <a href="expense.html">Expenses</a>
+    <a href="bills.html">Shared Bills</a>
+    <a class="active" href="reminders.html">Reminders</a>
+  </aside>
+
+  <main class="main">
+    <h1>Pending Dues</h1>
+    <div id="duesContainer">
+      <div class="panel warning">
+        <p>👤 Rahul owes you ₹400</p>
+        <button onclick="settleDue(0)">Mark as Paid</button>
+      </div>
+      <div class="panel warning">
+        <p>👤 You owe Neha ₹250</p>
+        <button onclick="settleDue(1)">Mark as Paid</button>
+      </div>
+      <div class="panel warning">
+        <p>👤 Simran owes you ₹300</p>
+        <button onclick="settleDue(2)">Mark as Paid</button>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

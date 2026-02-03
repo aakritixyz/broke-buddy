@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shared Bills</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="bg-blob blob-1"></div>
+<div class="bg-blob blob-2"></div>
+
+<div class="app">
+  <aside class="sidebar">
+    <h2>🏠 Hostel</h2>
+    <a href="index.html">Dashboard</a>
+    <a href="expense.html">Expenses</a>
+    <a class="active" href="bills.html">Shared Bills</a>
+    <a href="reminders.html">Reminders</a>
+  </aside>
+
+  <main class="main">
+    <h1>Shared Utilities</h1>
+
+    <div class="panel">
+      <h3>Split a Bill</h3>
+      <input placeholder="Bill Name">
+      <input type="number" placeholder="Total Amount ₹">
+      <input type="number" placeholder="Roommates">
+      <button onclick="splitBill()">Split Automatically</button>
+    </div>
+
+    <div class="panel">
+      <h3>Current Bills</h3>
+      <ul class="expense-list" id="billsList"></ul>
+    </div>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
