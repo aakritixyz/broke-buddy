@@ -27,3 +27,4 @@ Technologies Used
 	•	HTML5, CSS3, JavaScript
 	•	Chart.js for interactive charts
 	•	LocalStorage for persistent data
+# broke-buddy
