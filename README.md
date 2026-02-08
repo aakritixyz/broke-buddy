@@ -3,6 +3,7 @@ A modern, student-friendly budgeting and shared utilities web app for hostel lif
 Managing expenses in hostel life is often chaotic — roommates struggle to split bills, track payments, and maintain a monthly budget. HLUM solves this problem with a sleek, Mint-inspired UI that makes budgeting, bill-splitting, and reminders simple, visual, and fun.
 
 Features
+
 	•	Dashboard
 	•	Total budget, spent, and remaining amounts
 	•	Circular progress bars and category breakdown charts
@@ -24,6 +25,7 @@ Features
 	•	Responsive layout for desktop and mobile
 
 Technologies Used
+
 	•	HTML5, CSS3, JavaScript
 	•	Chart.js for interactive charts
 	•	LocalStorage for persistent data
